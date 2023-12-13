@@ -40,7 +40,6 @@ public class Test {
 
     @org.junit.jupiter.api.Test
     void shouldTestSomething() throws InterruptedException {
-        driver.get("http://0.0.0.0:9999");
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Иван");
         driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79998887744");
         driver.findElement(By.cssSelector("[data-test-id='agreement']")).click();
